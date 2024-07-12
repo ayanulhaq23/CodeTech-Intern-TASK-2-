@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    overflow: hidden;
+    background-color: rgb(26, 43, 79);
+    color: aliceblue;
+}
+nav{
+    text-align: center;
+    background-color: rgb(229, 225, 225);
+    color: #000000;
+    font-weight: 100;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.content{
+    text-align: center;
+    margin: 4rem;
+    font-family: 'open sans';
+    font-size: 1rem;
+    
+    
+}
+.question-content{
+    background-color: #fff;
+    color: #000000;
+    padding:  6rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.output-content{
+    background-color: #fff;
+    color: #000000;
+    padding: 4rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.select{
+    padding: 10px;
+    border-radius: 5px;        
+}
+.button:hover{
+    background-color:rgb(53, 76, 126);
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.button{
+    padding: 10px;
+    border-radius:5px ;
+}
+@media (max-width:700px) {
+    nav{
+        text-align: center;
+    }
+    .question-content{
+        
+        
+        flex-direction: row;
+        
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .question-content>input{
+        width:80px
+    }
+    .question-content>select{
+        font-size: 10px;
+
+    }
+    .question-content>button{
+        font-size: 10px;
+        
+    }
+    .output-content{
+        font-size: 10px;
+        padding: 2rem;
+    }
+}
